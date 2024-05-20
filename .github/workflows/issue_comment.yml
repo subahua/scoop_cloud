@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@main
     - name: Pull Request Validation
-      uses: Ash258/Scoop-GithubActions@stable
+      uses: shovel-org/GithubActions@1.7.0
       if: startsWith(github.event.comment.body, '/verify')
       env:
         GITH_EMAIL: subahua@qq.com
